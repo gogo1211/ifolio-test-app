@@ -1,0 +1,87 @@
+.information-form-container {
+  max-width: 1280px;
+  margin: 40px auto;
+  color: white;
+
+  @media only screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
+
+  .content {
+    display: flex;
+    @media only screen and (max-width: 767px) {
+      display: block;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 80px;
+      padding: 10px 0;
+
+      @media only screen and (max-width: 767px) {
+        margin-right: 0;
+      }
+  
+      .image {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        
+        background: black;
+        border: 3px solid white;
+  
+        > img {
+          width: 100%;
+        }
+  
+        .upload-control {
+          position: absolute;
+          bottom: 15px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          
+          input {
+            display: none;
+          }
+        }
+      }
+  
+      .information {
+        text-align: center;
+  
+        h4 {
+          margin: 0;
+        }
+  
+        h2, h4 {
+          overflow-wrap: anywhere;
+        }
+      }
+    }
+  
+    .information-form {
+      @media only screen and (max-width: 767px) {
+        margin-top: 30px;
+      }
+
+      label {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    button:first-child {
+      margin-right: 30px;
+    }
+  }
+}
